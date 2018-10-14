@@ -1,0 +1,9 @@
+.card{
+    border: none;
+}
+.card-body{
+    padding: none
+}
+.card-img-left{
+    margin-left: 17px
+}
