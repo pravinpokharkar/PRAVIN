@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="alert alert-info">welcome to {{nm}} </h2>
+    <h2 class="alert alert-info">welcome to {{nm.toUpperCase()}} </h2>
+    <h2 class="alert alert-info"> {{amt*10}} </h2>
+    <input type="{{typ}}" class="{{cls}}" value="Login">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <input [type]="typ" [class]="cls" [value]="nm"> 
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [class.jumbotron]='true'>codekul</div>
+    <div [style.border]="'1px solid blue '">codekul 2</div>
+  </div>
+</div>
+
+
+<input class="input" class="btn btn-primary" type="button" value="click Me" (click)="clickMe($event)">
+
+
+
+<input type="text" [(ngModel)]="anyThing"> {{anyThing}}
+

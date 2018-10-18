@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-bt-crd',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BtCrdComponent implements OnInit {
 
+  @Input()
+  crd:Crd;
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+class Crd{
+  imgUrl: string;
+  ttl: string;
+  msg: string;
 }
