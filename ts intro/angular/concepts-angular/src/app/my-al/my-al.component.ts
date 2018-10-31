@@ -13,5 +13,6 @@ export class MyAlComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }

@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'concepts-angular';
+  title = 'Testing Page';
   
   constructor() {
   
-  }
+    
 }
-
+}

@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-12">
     <h2 class="alert alert-info">welcome to {{nm}} </h2>
     <h2 class="alert alert-info">welcome to {{nm.toUpperCase()}} </h2>
@@ -17,11 +17,19 @@
     <div [class.jumbotron]='true'>codekul</div>
     <div [style.border]="'1px solid blue '">codekul 2</div>
   </div>
+</div> -->
+
+<div class="container">
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" [style.width]="nmPer"> Progress Bar
+    </div>
+  
+  </div>
 </div>
 
-
-<input class="input" class="btn btn-primary" type="button" value="click Me" (click)="clickMe($event)">
-
+<input class="input" class="btn btn-primary" type="button" value="Incr" (click)="clickMe(1)">
+<input class="input" class="btn btn-primary" type="button" value="Decrease" (click)="clickMe(2)">
 
 
 <input type="text" [(ngModel)]="anyThing"> {{anyThing}}

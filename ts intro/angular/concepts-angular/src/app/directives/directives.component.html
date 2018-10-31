@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-12">
+    <p [ngStyle]="{border: '1px solid red'}">welcome</p>
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <p [ngClass]="{'alert' :true, 'alert-info' : true}">welcome</p>
+    
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+  <input type="text" appSample1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+  <img src="http://www.codekul.com/img/codekul-logo.png" appSample1>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+  <input type="text" [appSample1]="'500px'" >
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+  <input type="text" [appSample1]="'100px'">
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" #usNm placeholder="username">
+    <input type="text" #pass placeholder="password">
+    <input type="button" class="btn btn-info" value="login" (click)="makeLogin(usNm.value, pass.value)">
+  </div>
+</div>
+
+<div class="row" *ngIf="isLoggedIn">
+  <div class="col-md-12">
+  <div class="jumbotron">
+    <p> HIIIIIIIIIIIIIIIIIIHELLLLLLLLLLLPOOOOOOOooooo</p>
+  </div>
+  </div>
+</div>
