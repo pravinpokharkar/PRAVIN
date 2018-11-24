@@ -19,6 +19,10 @@ import { SampleComponent } from './sample/sample.component';
 import { SampleServService } from 'src/app/sample/sample-serv.service';
 import { AlcComponent } from './sample/alc.component';
 import { DrpComponent } from './sample/drp.component';
+import { DirePracComponent } from './dire-prac/dire-prac.component';
+import { DirePracDirective } from './dire-prac.directive';
+import { PractDirective } from './pract.directive';
+import { LeftMenuComponent } from './left-menu/left-menu.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,15 @@ import { DrpComponent } from './sample/drp.component';
 
     AlcComponent,
 
-    DrpComponent
+    DrpComponent,
+
+    DirePracComponent,
+
+    DirePracDirective,
+
+    PractDirective,
+
+    LeftMenuComponent
   ],
   imports: [
     BrowserModule,

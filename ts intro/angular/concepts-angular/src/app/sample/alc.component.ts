@@ -19,10 +19,9 @@ export class AlcComponent implements OnInit {
   constructor( private sampleServ: SampleServService) { }
 
   ngOnInit() {
-    this.sampleServ.receive(str=>{
-this.cls= str;
-    }
-      )
+    this.sampleServ.receive(function(str) {
+        this.cls = str
+    })
   }
 
 }

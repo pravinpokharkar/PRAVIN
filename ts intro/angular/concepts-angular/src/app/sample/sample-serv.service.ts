@@ -16,7 +16,7 @@ send(str: string){
 this.em.emit(str)
 }
 
-receive(onRc: (str:string)=>void){
-this.em.subscribe(str=> console.log(str))
+receive( onRc : (str : string) => void ) {
+  this.em.subscribe( str => onRc(str))
 }
 }

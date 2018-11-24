@@ -1,0 +1,8 @@
+<div class="container">
+  <div>
+    <a [routerLink]="['login']">login</a>
+    <a [routerLink]="['dash', 'ano']">Dashboard</a>
+    <a [routerLink]="['dash']"[queryParams]>Dashboard</a>
+  </div>
+  <router-outlet></router-outlet>
+</div>

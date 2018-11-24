@@ -27,7 +27,7 @@ export class DrpComponent implements OnInit {
   }
 
 
-  myClk(num :number){
+  myClk(num :number){ 
     if (num===1)
 this.sampleServ.send('alert alert-info')
 else if (num===2)
@@ -36,5 +36,5 @@ else
 this.sampleServ.send('alert alert-warning')
   }
   }
-  }
-}
+  
+
